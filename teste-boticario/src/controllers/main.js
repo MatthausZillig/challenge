@@ -10,8 +10,10 @@ export default {
   methods: {
     fillCart (event) {
       let value = document.querySelector('#value')
-
       this.total = value.textContent + ' | ' + this.total
+    },
+    formatCurrence (value) {
+      return `R$ ${value.toFixed(2).split('.').join(',')}`
     }
   },
   mounted () {

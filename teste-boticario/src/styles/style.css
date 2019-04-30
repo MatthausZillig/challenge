@@ -9,6 +9,7 @@
 }
 
 #card {
+  width: 30px;
   -webkit-transition: padding 2s;
   /* For Safari 3.1 to 6.0 */
   transition: width 20s;

@@ -33,7 +33,7 @@
         </v-flex>
 
         <!--Products Cards-->
-        <v-flex xs12 sm4 md4 lg4 v-for="item in this.arrProducts" :key="item.name">
+        <v-flex xs12 sm6 md4 lg4 v-for="item in this.arrProducts" :key="item.name">
           <v-hover>
             <v-card
               slot-scope="{ hover }"
@@ -50,7 +50,7 @@
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text"
                     style="height: 100%;"
-                  >R$ {{ item.Value }}</div>
+                  >{{ formatCurrence(item.Value) }}</div>
                 </v-expand-transition>
               </v-img>
               <v-card-text class="pt-4" style="position: relative;">
@@ -67,7 +67,7 @@
                   <v-icon>add_shopping_cart</v-icon>
                 </v-btn>
                 <div class="font-weight-light grey--text title mt-5">{{ item.name }}</div>
-                <div class="font-weight-light grey--text title mt-2"> R$ {{ item.Value }}</div>
+                <div class="font-weight-light grey--text title mt-2"> {{ formatCurrence(item.Value) }}</div>
               </v-card-text>
             </v-card>
           </v-hover>
