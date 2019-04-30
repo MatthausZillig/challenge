@@ -19,7 +19,7 @@
             @focus="totalCart(this.id)"
           >
             <v-icon>shopping_cart</v-icon>
-            <span id="total" class="text-truncate">{{ this.total }}</span>
+            <span id="total" class="text-truncate">{{ formatCurrence(this.totalCart) }}</span>
           </v-btn>
         </v-toolbar-items>
       </v-toolbar>
@@ -46,9 +46,8 @@
               <v-img :aspect-ratio="16/9" :src="item.images[0].imageUrl">
                 <v-expand-transition>
                   <div
-                    id="value"
                     v-if="hover"
-                    class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text"
+                    class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text value"
                     style="height: 100%;"
                   >{{ formatCurrence(item.Value) }}</div>
                 </v-expand-transition>
@@ -62,7 +61,7 @@
                   large
                   right
                   top
-                  @click="fillCart"
+                  @click="fillCart(item.Value)"
                 >
                   <v-icon>add_shopping_cart</v-icon>
                 </v-btn>

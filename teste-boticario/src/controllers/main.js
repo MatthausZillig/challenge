@@ -3,14 +3,14 @@ export default {
   name: 'Main',
   data () {
     return {
-      total: '',
-      arrProducts: []
+      arrProducts: [],
+      totalCart: 0
     }
   },
   methods: {
-    fillCart (event) {
-      let value = document.querySelector('#value')
-      this.total = value.textContent + ' | ' + this.total
+    fillCart (itemValue) {
+      this.totalCart += itemValue
+      console.log(itemValue)
     },
     formatCurrence (value) {
       return `R$ ${value.toFixed(2).split('.').join(',')}`
