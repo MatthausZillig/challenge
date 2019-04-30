@@ -1,6 +1,7 @@
 # teste-boticario
 
 > A Vue.js project
+Teste front end realizado em Vue.js, a seguir instruções para rodar o projeto:
 
 ## Build Setup
 
