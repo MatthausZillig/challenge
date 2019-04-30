@@ -1,34 +1,36 @@
-.text-margin{
-  margin-top: 50px !important;
-}
-
-.v-card--reveal {
-  align-items: center;
-  bottom: 0;
-  justify-content: center;
-  opacity: .5;
-  position: absolute;
-  width: 100%;
-}
-
 #total {
-display: none;
+  display: none;
 }
 
 #cart:hover #total {
-display: block;
-width: 230px !important;
-color: #fff;
+  display: block;
+  width: 100px !important;
+  color: #fff;
 }
 
 #card {
--webkit-transition: padding 2s; /* For Safari 3.1 to 6.0 */
-transition: width 7s;
+  -webkit-transition: padding 2s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 20s;
 }
 
-.height-cart {
-height: 40px !important;
-}
-.margin-left {
-margin-left: 150px !important;
-}
+  .text-margin {
+    margin-top: 50px !important;
+  }
+
+  .v-card--reveal {
+    align-items: center;
+    bottom: 0;
+    justify-content: center;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+  }
+
+  .height-cart {
+    height: 40px !important;
+  }
+
+  .margin-left {
+    margin-left: 150px !important;
+  }
